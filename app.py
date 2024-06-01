@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 @app.route("/api/v1.0/predict", methods=['GET'])
 def fun():
-    url = "https://github.com/MathiaFiorelli/RTA/raw/main/perceptron.pkl"
+    url = "https://github.com/gsar999/RTA/raw/main/perceptron.pkl"
     response = requests.get(url)
     response.raise_for_status()  # Ensure the request was successful
 
